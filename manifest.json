@@ -1,0 +1,15 @@
+{
+  "background_color": "#36364b",
+  "dir": "ltr",
+  "display": "minimal-ui",
+  "name": "moneyflow-ten.vercel",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "moneyflow-ten.vercel",
+  "start_url": "/",
+  "theme_color": "#3a2b2b",
+  "lang": "en",
+  "categories": [
+    "finance"
+  ]
+}
