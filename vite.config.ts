@@ -3,34 +3,7 @@ import path from "path";
 import react from "@vitejs/plugin-react";
 import { defineConfig, loadEnv } from "vite";
 import z from "zod";
-import { VitePWA } from 'vite-plugin-pwa'
 
-export default defineConfig({
-  plugins: [
-    VitePWA({ registerType: 'autoUpdate' })
-  ]
-})
-import { VitePWA } from 'vite-plugin-pwa'
-
-export default defineConfig({
-  plugins: [
-    VitePWA({
-      injectRegister: 'auto'
-    })
-  ]
-})
-import { VitePWA } from 'vite-plugin-pwa'
-
-export default defineConfig({
-  plugins: [
-    VitePWA({
-      registerType: 'autoUpdate',
-      workbox: {
-        globPatterns: ['**/*.{js,css,html,ico,png,svg}']
-      }
-    })
-  ]
-})
 const envSchema = z.object({
   VITE_APP_VERSION: z.string(),
   VITE_APP_GITHUB_LINK: z.string().url(),
